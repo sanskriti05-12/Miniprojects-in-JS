@@ -1,0 +1,116 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling the body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: #fff;
+    text-align: center;
+}
+
+/* Main container */
+#main_Div {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Title */
+#main_Div h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Clock container */
+#clock_div_main {
+    padding: 20px;
+}
+
+/* Input and button styles */
+#inputDiv {
+    margin-bottom: 20px;
+}
+
+#inputDiv input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#inputDiv button {
+    padding: 10px 20px;
+    background-color: #00f2fe;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+#inputDiv button:hover {
+    background-color: #4facfe;
+    transform: scale(1.1);
+}
+
+/* Alarm display */
+#show_time {
+    margin-top: 20px;
+    animation: fadeInUp 1s ease-out;
+}
+
+#show_time h1 {
+    margin-bottom: 10px;
+}
+
+/* Stop button */
+#Stopbtn {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+#Stopbtn:hover {
+    background-color: #ff4b47;
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
